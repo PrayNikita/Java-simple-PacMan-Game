@@ -1,4 +1,3 @@
-import java.util.Random;
 
 public class Blinky extends Ghost{
 
@@ -9,10 +8,10 @@ public class Blinky extends Ghost{
     @Override
     public boolean move(int PlayerX, int PlayerY)
     {
-        int xDiff = PlayerX - this.x;
-        int yDiff = PlayerY - this.y;
+        int xDiff = Math.abs(PlayerX - this.x);
+        int yDiff = Math.abs(PlayerY - this.y);
 
-        if (PlayerX > yDiff)
+        if (xDiff > yDiff)
         {
             if (PlayerX > this.x) this.x ++;
             else this.x --;
