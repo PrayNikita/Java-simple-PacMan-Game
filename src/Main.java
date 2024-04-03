@@ -32,7 +32,7 @@ public class Main {
 
         Player PacMan = new Player(x, y);
         int timer = 1;
-        while (!chatched || timer <= 10)
+        while (!chatched)
         {
             System.out.println("Runde" + timer);
             try{
@@ -47,7 +47,7 @@ public class Main {
                 if (hunter[i].move(PacMan.getX(), PacMan.getY()))
                 {
                     System.out.println("Hunter " + i + " hat gefangen");
-                    break;
+                    chatched = true;
                 }
                 map [hunter[i].getX()][hunter[i].getY()] = hunter[i].getSymbol();
             }
