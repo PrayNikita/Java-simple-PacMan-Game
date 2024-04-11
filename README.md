@@ -1,4 +1,5 @@
 # Java-simple-PacMan-Game
-No Player Movement 
-No UI
-Based on Console outputs
+No Player Movement <br>
+No UI <br>
+Based on Console outputs <br>
+Works sometimes
